@@ -14,7 +14,6 @@ class BooksApiTestCase(APITestCase):
         self.book_1 = Book.objects.create(name='Test book 1', price=15, author_name='Author 1')
         self.book_2 = Book.objects.create(name='Test book 2', price=21, author_name='Author 5')
         self.book_3 = Book.objects.create(name='Test book Author 1', price=100, author_name='Author 2')
-        pass
 
     def test_get(self):
         url = reverse('book-list')
